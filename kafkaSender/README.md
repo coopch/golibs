@@ -31,6 +31,6 @@ func main() {
 
     // send message to kafka
 	data := []byte(`{ "message": "Hello World" }`)
-	ks.SendBytes(data)
+	ks.SendBytes("TestTopic", data)
 }
 ```
